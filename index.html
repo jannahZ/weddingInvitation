@@ -711,8 +711,8 @@
         // ═══════════════════════════════════════════
         function submitRSVP() {
             const name = document.getElementById('name').value.trim();
-            const email = document.getElementById('email').value.trim();
-            const phone = document.getElementById('phone').value.trim();
+            // const email = document.getElementById('email').value.trim();
+            // const phone = document.getElementById('phone').value.trim();
             const attendance = document.querySelector('input[name="attendance"]:checked').value;
             const guests = document.getElementById('guests').value;
             const wishes = document.getElementById('wishes').value.trim();
@@ -734,8 +734,8 @@
             // Build the data
             const formData = {
                 name: name,
-                email: email,
-                phone: phone,
+                // email: email,
+                // phone: phone,
                 attendance: attendance,
                 guests: attendance === 'Yes, attending' ? guests : '0',
                 wishes: wishes,
